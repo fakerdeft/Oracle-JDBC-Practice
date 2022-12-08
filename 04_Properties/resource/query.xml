@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>query xml</comment>
+
+	<entry key="insertMember">
+		INSERT INTO MEMBER
+		VALUES(SEQ_USERNO.NEXTVAL,?,?,?,?,?,?,?,?,?,DEFAULT)
+	</entry>
+	<entry key="selectAll">
+		SELECT * 
+		FROM MEMBER 
+		ORDER BY 학번
+	</entry>
+	<entry key="selectById">
+		SELECT * 
+		FROM MEMBER 
+		WHERE 아이디= ?
+	</entry>
+	<entry key="selectByName">
+		SELECT * 
+		FROM MEMBER 
+		WHERE 이름 LIKE ?
+	</entry>
+	<entry key="updateMemberName">
+		UPDATE MEMBER 
+			SET 이름 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberPw">
+		UPDATE MEMBER 
+			SET 비밀번호 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberGender">
+		UPDATE MEMBER 
+			SET 성별 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberAge">
+		UPDATE MEMBER 
+			SET 나이 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberEmail">
+		UPDATE MEMBER 
+			SET 이메일 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberPhone">
+		UPDATE MEMBER 
+			SET 핸드폰 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberAddress">
+		UPDATE MEMBER 
+			SET 주소 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="updateMemberHobby">
+		UPDATE MEMBER 
+			SET 취미 = ? 
+			WHERE 아이디 = ?
+	</entry>
+	
+	<entry key="deleteMember">
+		DELETE FROM MEMBER 
+			WHERE 아이디 = ?
+	</entry>
+	<entry key="deleteAllMember">
+		DELETE FROM MEMBER
+	</entry>
+
+</properties>
